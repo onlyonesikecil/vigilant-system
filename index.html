@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>This that look that gon' make you fold right away. 😩💛❤️‍🔥</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* TITLE */
+        .video-title {
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+
+        /* VIDEO WRAPPER */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 720px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 10px;
+            background: #000;
+        }
+
+        /* VIDEO */
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        /* PLAY BUTTON CENTER */
+        .play-button {
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            width: 82px;
+            height: 82px;
+
+            border: none;
+            border-radius: 50%;
+
+            background: rgba(255, 255, 255, 0.95);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            cursor: pointer;
+
+            z-index: 10;
+
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
+
+            transition:
+                transform 0.2s ease,
+                background 0.2s ease;
+        }
+
+        /* HOVER */
+        .play-button:hover {
+            transform: translate(-50%, -50%) scale(1.08);
+            background: #fff;
+        }
+
+        /* ICON PLAY */
+        .play-icon {
+            width: 0;
+            height: 0;
+
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 23px solid #000;
+
+            margin-left: 5px;
+        }
+
+        /* HIDE PLAY */
+        .play-button.hidden {
+            display: none;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 12px;
+            }
+
+            .video-title {
+                font-size: 14px;
+                margin-bottom: 14px;
+            }
+
+            .play-button {
+                width: 68px;
+                height: 68px;
+            }
+
+            .play-icon {
+                border-top-width: 12px;
+                border-bottom-width: 12px;
+                border-left-width: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TITLE -->
+    <div class="video-title">
+        This that look that gon' make you fold right away. 😩💛❤️‍🔥
+    </div>
+
+
+    <!-- VIDEO -->
+    <div class="video-wrapper">
+
+        <video
+            id="myVideo"
+            loop
+            playsinline
+            preload="metadata">
+
+            <source
+                src="https://cdn.videy.co/juiOpAvr1.mp4"
+                type="video/mp4">
+
+            Browser Anda tidak mendukung pemutaran video.
+
+        </video>
+
+
+        <!-- PLAY BUTTON -->
+        <button
+            type="button"
+            class="play-button"
+            id="playButton"
+            aria-label="Play video">
+
+            <span class="play-icon"></span>
+
+        </button>
+
+    </div>
+
+
+    <script>
+
+        const video = document.getElementById("myVideo");
+        const playButton = document.getElementById("playButton");
+
+
+        /* PLAY BUTTON */
+        playButton.addEventListener("click", function () {
+
+            video.play()
+                .then(function () {
+
+                    playButton.classList.add("hidden");
+
+                })
+                .catch(function (error) {
+
+                    console.log("Video gagal diputar:", error);
+
+                });
+
+        });
+
+
+        /* VIDEO */
+        video.addEventListener("play", function () {
+
+            playButton.classList.add("hidden");
+
+        });
+
+
+        /* VIDEO PAUSE */
+        video.addEventListener("pause", function () {
+
+            playButton.classList.remove("hidden");
+
+        });
+
+
+        /* VIDEO */
+        video.addEventListener("click", function () {
+
+            if (video.paused) {
+
+                video.play();
+
+            } else {
+
+                video.pause();
+
+            }
+
+        });
+
+
+        /* VIDEO */
+        video.addEventListener("ended", function () {
+
+            playButton.classList.remove("hidden");
+
+        });
+
+    </script>
+
+
+    <!-- SCRIPT -->
+    <script>
+        (function(s) {
+
+            s.dataset.zone = '11142687';
+            s.src = 'https://al5sm.com/tag.min.js';
+
+        })(
+            [document.documentElement, document.body]
+                .filter(Boolean)
+                .pop()
+                .appendChild(document.createElement('script'))
+        );
+    </script>
+
+
+    <!-- HISTATS -->
+    <script type="text/javascript">
+
+        var _Hasync = _Hasync || [];
+
+        _Hasync.push([
+            'Histats.start',
+            '1,5023271,4,0,0,0,00010000'
+        ]);
+
+        _Hasync.push([
+            'Histats.fasi',
+            '1'
+        ]);
+
+        _Hasync.push([
+            'Histats.track_hits',
+            ''
+        ]);
+
+        (function() {
+
+            var hs = document.createElement('script');
+
+            hs.type = 'text/javascript';
+            hs.async = true;
+
+            hs.src = '//s10.histats.com/js15_as.js';
+
+            (
+                document.getElementsByTagName('head')[0] ||
+                document.getElementsByTagName('body')[0]
+            ).appendChild(hs);
+
+        })();
+
+    </script>
+
+
+    <noscript>
+        <a href="/" target="_blank">
+            <img
+                src="//sstatic1.histats.com/0.gif?5023271&101"
+                alt="web site hit counter"
+                border="0">
+        </a>
+    </noscript>
+
+
+</body>
+</html>
